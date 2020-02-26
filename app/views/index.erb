@@ -1,0 +1,13 @@
+
+<h3> My list of Articles</h3>
+
+
+<button>
+<a href="/articles/new">Create a new Article</a>
+</button>
+
+  <ul>
+    <% @articles.each do |article| %>
+      <li><a href="/articles/<%= article.id %>"><%= article.title%></a></li>
+    <% end %>
+  </ul>
