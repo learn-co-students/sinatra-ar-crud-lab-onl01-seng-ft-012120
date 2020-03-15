@@ -1,0 +1,9 @@
+<h1>This is my first article!!! </h1>
+<h2> <%= @article_data.title %> </h2>
+<h2> <%= @article_data.content %> </h2>
+
+<h1>Delete Submission? </h1>
+<form method="post" action="/articles/<%= @article_data.id %>" >
+<input id="hidden" type="hidden" name="_method" value="DELETE">
+<input type="submit" value="delete">
+</form>
